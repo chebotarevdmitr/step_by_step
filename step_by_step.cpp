@@ -17,7 +17,12 @@ int main()
      char ch;
      ch = 'X'; //  символьной переменной char присвоили значение " X "
      cout << " \t This is char ch = " << ch << endl; //Вывод :  This is char ch = Х
-   
+
+     cout << "\tThe program outputs the Latin alphabet" << endl;
+     cout << "\n";
+     char letter;
+     for (letter = 'A'; letter <= 'Z'; letter++)    //переменная типа char для 
+         cout <<     letter << " ";                 //управления циклом for
 
     system("pause>0");
 }
