@@ -1,4 +1,4 @@
-﻿//function
+﻿// step_1
 #include <iostream>
 using namespace std;
 int main()
@@ -12,7 +12,12 @@ int main()
     i = j;     //вне допустимого диапазон длч числа signed short int в результате присваивания его
               //переменной i оно будет интропретироваться как отрицательное число
 
-     cout << i << " " << j << endl;
+     cout << i << " " << j << endl; //вывод в консоль -5536 60000
   
+     char ch;
+     ch = 'X'; //  символьной переменной char присвоили значение " X "
+     cout << " \t This is char ch = " << ch << endl; //Вывод :  This is char ch = Х
+   
+
     system("pause>0");
 }
