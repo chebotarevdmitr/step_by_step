@@ -1,9 +1,18 @@
 ﻿//function
 #include <iostream>
-
+using namespace std;
 int main()
 {
-    std::cout << "Hello Step by step\n";
+    // демонстрация различия между целыми числами 
+    // со знаком и бес знака
+    short int i;            // короткое целое со знаком
+    short unsigned int j;  // короткое целое без знака
 
+    j = 60000;  //60000 находится в допустимом значении для unsignet short int но как правило будет
+    i = j;     //вне допустимого диапазон длч числа signed short int в результате присваивания его
+              //переменной i оно будет интропретироваться как отрицательное число
+
+     cout << i << " " << j << endl;
+  
     system("pause>0");
 }
