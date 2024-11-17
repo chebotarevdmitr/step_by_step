@@ -1,24 +1,21 @@
-﻿// step 2 
-//tip s plavaushey nochkoy  -> float -> double 
-//ispolzovanie teoremi Pifagora dlya nahojdeniya dlinny gipotenuzy
-//pryamougolnogo treugolnika pri zadannyh dlinnah ego katetah
-
-/* 
-  Теорема Пифагора - это фундаментальная теорема в геометрии, которая гласит, 
-  что в прямоугольном треугольнике квадрат гипотенузы равен сумме квадратов катетов.
-*/
-
+﻿// step 3
+//tip    bool   true =1 (istina) false =0(loj)
 #include <iostream>
-#include <cmath>
-
 using namespace std;
+
 int main()
 {
-    double x, y, z;
-    x = 5.0;
-    y = 4.0;
-    z = sqrt(x * x + y * y);
-    cout << "Gipotenuza =" << z;
-
+    cout << "\t demonstraciya bulevih znacheniy " << endl;
+    bool b;
+    b = false;
+    cout << "bool b false = " << b << "\n";
+    b = true;
+    cout << "bool b true = " << b << "\n";
+    // bulevo znachenie mojet upravlyat predlojeniem "if"
+    if (b)cout << "eto  vipolnyaensya.\n";
+    b = false;
+    cout << "eto ne vipolnyaensya .\n";
+    //rezultatom deistviya budet znachenie true/false
+    cout << "10>9 esto = " << (10 < 9) << "\n";
     system("pause>0");
 }
