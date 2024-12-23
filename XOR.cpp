@@ -20,12 +20,12 @@ int main() {
    q = false;
    cout << p << " XOR " << q << " ravno " << ((p || q) && !(p && q)) << "\n";
 
-   
-    bool a = true;
-    bool c = false;
+   cout << "\ta=true c=false"<<"\n";
+   bool a = true;
+   bool c = false;
 
-    cout << "a = " << a << endl; // выводит: a = 1
-    cout << "b = " << c << endl; // выводит: b = 0
+   cout << "a = " << a << endl; // выводит: a = 1
+   cout << "b = " << c << endl; // выводит: b = 0
 
-    return 0;
+   return 0;
 }
