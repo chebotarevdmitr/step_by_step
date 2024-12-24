@@ -4,35 +4,32 @@ int main() {
     bool A = true;
     bool B = false;
 
-    std::cout << "A && B = " << (A && B) << std::endl; // Ожидаемый результат: 0
-    std::cout << "A || B = " << (A || B) << std::endl; // Ожидаемый результат: 1
-    std::cout << "!A = " << (!A) << std::endl;         // Ожидаемый результат: 0
-    std::cout << "!B = " << (!B) << std::endl;         // Ожидаемый результат: 1
+    // Демонстрация логических операций
+    std::cout << std::boolalpha; // Включение логического форматирования
+    std::cout << "A && B = " << (A && B) << std::endl; // Ожидаемый результат: false
+    std::cout << "A || B = " << (A || B) << std::endl; // Ожидаемый результат: true
+    std::cout << "!A = " << (!A) << std::endl;         // Ожидаемый результат: false
+    std::cout << "!B = " << (!B) << std::endl;         // Ожидаемый результат: true
 
-    int i, j;
-    bool b1, b2;
-    i = 10;
-    j = 11;
-    if(i<j)
-      std::cout << "\ti<j"<<std::endl;
-    if(i<=j)
-       std::cout << "\ti<=j" << std::endl;
-    if(i!=j)
-       std::cout << " i!=j" << std::endl;
-    if(i==j)
-       std::cout << "this will not be executed" << std::endl;
-    if(i>=j)
-       std::cout << "this will not be executed" << std::endl;
-    if(i>j)
-       std::cout << "this will not be executed" << std::endl;
+    int firstNumber = 10;
+    int secondNumber = 11;
 
-   b1 = true;
-   b2 = false;
-   if(b1&&b2)
-      std::cout << "this will not be executed" << std::endl;
-   if(!(b1&&b2))
-      std::cout << " !=b1&&b2 There is a truth " << std::endl;
-   if(b1||b2)
-      std::cout << " b1 || b2  There is a truth " << std::endl;
-   return 0;
+    // Проверка условий для числовых переменных
+    std::cout << "firstNumber < secondNumber: " << (firstNumber < secondNumber) << std::endl; // Ожидаемый результат: true
+    std::cout << "firstNumber <= secondNumber: " << (firstNumber <= secondNumber) << std::endl; // Ожидаемый результат: true
+    std::cout << "firstNumber != secondNumber: " << (firstNumber != secondNumber) << std::endl; // Ожидаемый результат: true
+    std::cout << "firstNumber == secondNumber: " << (firstNumber == secondNumber) << std::endl; // Ожидаемый результат: false
+    std::cout << "firstNumber >= secondNumber: " << (firstNumber >= secondNumber) << std::endl; // Ожидаемый результат: false
+    std::cout << "firstNumber > secondNumber: " << (firstNumber > secondNumber) << std::endl;   // Ожидаемый результат: false
+
+    bool firstCondition = true;
+    bool secondCondition = false;
+
+    // Проверка условий для логических переменных
+    std::cout << "firstCondition && secondCondition: " << (firstCondition && secondCondition) << std::endl; // Ожидаемый результат: false
+    std::cout << "!firstCondition && !secondCondition: " << (!firstCondition && !secondCondition) << std::endl; // Ожидаемый результат: false
+    std::cout << "firstCondition || secondCondition: " << (firstCondition || secondCondition) << std::endl; // Ожидаемый результат: true
+
+    return 0;
 }
+
